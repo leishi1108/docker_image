@@ -13,3 +13,5 @@ RUN pip3 install numpy==1.21.5 scikit-learn==1.0.2 pandas==1.3.5 tensorboardX==2
 RUN pip3 install openai langchain faiss-cpu pypdf google-search-results
 
 RUN pip3 install jupyter
+RUN pip3 install thriftpy2
+RUN pip3 install cython thriftpy2
