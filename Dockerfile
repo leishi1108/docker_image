@@ -4,8 +4,7 @@ USER root
 RUN echo 'root:111111' | chpasswd
 
 RUN apt-get update -y
-
-RUN apt-get install gcc libpq-dev -y
+RUN apt-get install gcc libpq-dev vim -y
 RUN apt-get install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev -y
 RUN apt-get install python3.10 python3-pip python3-venv python3-wheel -y
 RUN python3 -m pip install --upgrade pip setuptools wheel
